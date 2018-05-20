@@ -1,4 +1,4 @@
-package Sorting_Basic.insertion_sort_advance;
+package _01_Sorting_Basic.other_sort;
 
 import java.lang.reflect.Method;
 

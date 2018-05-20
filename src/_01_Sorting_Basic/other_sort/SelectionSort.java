@@ -1,7 +1,7 @@
-package Sorting_Basic.other_sort;
+package _01_Sorting_Basic.other_sort;
 
 
-import Sorting_Basic.selection_sort_detect_performance.SortTestHelper;
+import _01_Sorting_Basic.selection_sort_detect_performance.SortTestHelper;
 
 /**
  * description  测试用例
@@ -34,6 +34,6 @@ public class SelectionSort {
   public static void main(String[] args) {
     int n = 100000;
     Integer[] arr = SortTestHelper.generateRandomArray(n, 0, 100000);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.SelectionSort", arr);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.SelectionSort", arr);
   }
 }

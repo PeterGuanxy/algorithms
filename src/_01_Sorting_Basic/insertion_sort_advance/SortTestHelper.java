@@ -1,4 +1,4 @@
-package Sorting_Basic.selection_sort_detect_performance;
+package _01_Sorting_Basic.insertion_sort_advance;
 
 import java.lang.reflect.Method;
 
@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
  * description    测试用例构造器
  *
  * @author guanxy
- * @date 2018/4/26
+ * @date 2018/5/8
  */
 public class SortTestHelper {
 
@@ -20,6 +20,29 @@ public class SortTestHelper {
 
     for (int i = 0; i < n; i++) {
       arr[i] = new Integer((int) (Math.random() * (rangeR - rangeL + 1) + rangeL));
+    }
+
+    return arr;
+  }
+
+  /**
+   * 生成一个近乎有序的数组
+   * 首先生成一个完全有序的数组，之后随即交换swapTimes对数据
+   * swapTimes定义了数组的无序程度，=0完全有序，越大越趋于无序
+   */
+  public static Integer[] generateNearlyOrderArray(int n, int swapTimes) {
+
+    Integer[] arr = new Integer[n];
+    for (int i = 0; i < n; i++) {
+      arr[i] = new Integer(i);
+    }
+
+    for (int i = 0; i < swapTimes; i++) {
+      int a = (int) (Math.random() * n);
+      int b = (int) (Math.random() * n);
+      int temp = arr[a];
+      arr[a] = arr[b];
+      arr[b] = temp;
     }
 
     return arr;

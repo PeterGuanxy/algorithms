@@ -1,4 +1,4 @@
-package Sorting_Basic.other_sort;
+package _01_Sorting_Basic.other_sort;
 
 /**
  * description  希尔排序

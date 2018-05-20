@@ -1,4 +1,4 @@
-package Sorting_Basic.insertion_sort_advance;
+package _01_Sorting_Basic.other_sort;
 
 /**
  * description    改进版插入排序
@@ -30,7 +30,7 @@ public class InsertionSort {
   public static void main(String[] args) {
     int N = 20000;
     Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.InsertionSort", arr);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.InsertionSort", arr);
 
     return;
   }

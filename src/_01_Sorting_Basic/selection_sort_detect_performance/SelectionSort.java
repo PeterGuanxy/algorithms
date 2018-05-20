@@ -1,13 +1,11 @@
-package Sorting_Basic.insertion_sort_advance;
+package _01_Sorting_Basic.selection_sort_detect_performance;
 
-
-import Sorting_Basic.selection_sort_detect_performance.SortTestHelper;
 
 /**
  * description  测试用例
  *
  * @author guanxy
- * @date 2018/5/8
+ * @date 2018/4/26
  */
 public class SelectionSort {
 
@@ -33,7 +31,7 @@ public class SelectionSort {
 
   public static void main(String[] args) {
     int n = 100000;
-    Integer[] arr = Sorting_Basic.selection_sort_detect_performance.SortTestHelper.generateRandomArray(n, 0, 100000);
-    SortTestHelper.testSort("Sorting_Basic.selection_sort_detect_performance.SelectionSort", arr);
+    Integer[] arr = SortTestHelper.generateRandomArray(n, 0, 100000);
+    SortTestHelper.testSort("_01_Sorting_Basic.selection_sort_detect_performance.SelectionSort", arr);
   }
 }

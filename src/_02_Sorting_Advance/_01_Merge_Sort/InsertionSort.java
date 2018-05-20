@@ -1,23 +1,27 @@
-package Sorting_Basic.other_sort;
+package _02_Sorting_Advance._01_Merge_Sort;
 
 /**
- * description    改进版插入排序
+ * description
  *
  * @author guanxy
- * @date 2018/5/8
+ * @date 2018/5/20
  */
 public class InsertionSort {
 
-  public static void sort(Comparable[] arr) {
+  // 我们的算法类不允许产生任何实例
+  private InsertionSort(){}
+
+  public static void sort(Comparable[] arr){
 
     int n = arr.length;
     for (int i = 0; i < n; i++) {
       Comparable e = arr[i];
       int j = i;
-      for (; j > 0 && arr[j - 1].compareTo(e) > 0; j--) {
-        arr[j] = arr[j - 1];
+      for ( ; j > 0 && arr[j-1].compareTo(e) > 0 ; j--) {
+        arr[j] = arr[j-1];
       }
       arr[j] = e;
+
     }
   }
 
@@ -27,10 +31,12 @@ public class InsertionSort {
     arr[j] = t;
   }
 
+  // 测试InsertionSort
   public static void main(String[] args) {
-    int N = 20000;
+
+    int N = 10000;
     Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.InsertionSort", arr);
+    SortTestHelper.testSort("_02_Sorting_Advance._01_Merge_Sort.InsertionSort", arr);
 
     return;
   }

@@ -1,4 +1,4 @@
-package Sorting_Basic.other_sort;
+package _01_Sorting_Basic.other_sort;
 
 import java.util.Arrays;
 
@@ -21,10 +21,10 @@ public class Main {
     Integer[] arr3 = Arrays.copyOf(arr1,arr1.length);
     Integer[] arr4 = Arrays.copyOf(arr1,arr1.length);
 
-    SortTestHelper.testSort("Sorting_Basic.other_sort.SelectionSort",arr1);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.InsertionSort",arr2);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.BubbleSort",arr3);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.ShellSort",arr4);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.SelectionSort",arr1);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.InsertionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.BubbleSort",arr3);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.ShellSort",arr4);
 
     System.out.println();
 
@@ -36,10 +36,10 @@ public class Main {
     arr3 = Arrays.copyOf(arr1,arr1.length);
     arr4 = Arrays.copyOf(arr1,arr1.length);
 
-    SortTestHelper.testSort("Sorting_Basic.other_sort.SelectionSort",arr1);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.InsertionSort",arr2);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.BubbleSort",arr3);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.ShellSort",arr4);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.SelectionSort",arr1);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.InsertionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.BubbleSort",arr3);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.ShellSort",arr4);
     System.out.println();
 
     //测试3  测试近乎有序的数组
@@ -51,10 +51,10 @@ public class Main {
     arr3 = Arrays.copyOf(arr1,arr1.length);
     arr4 = Arrays.copyOf(arr1,arr1.length);
 
-    SortTestHelper.testSort("Sorting_Basic.other_sort.SelectionSort",arr1);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.InsertionSort",arr2);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.BubbleSort",arr3);
-    SortTestHelper.testSort("Sorting_Basic.other_sort.ShellSort",arr4);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.SelectionSort",arr1);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.InsertionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.BubbleSort",arr3);
+    SortTestHelper.testSort("_01_Sorting_Basic.other_sort.ShellSort",arr4);
     return;
 
   }

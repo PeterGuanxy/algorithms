@@ -1,4 +1,4 @@
-package Sorting_Basic.selection_sort;
+package _01_Sorting_Basic.selection_sort;
 
 /**
  * Created by guanxy on 2018/4/25.

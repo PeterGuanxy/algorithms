@@ -1,4 +1,4 @@
-package Sorting_Basic.selection_sort_generate_test_case;
+package _01_Sorting_Basic.selection_sort_generate_test_case;
 
 /**
  * description    测试用例构造器

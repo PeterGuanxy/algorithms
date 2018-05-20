@@ -1,4 +1,4 @@
-package Sorting_Basic.insertion_sort_advance;
+package _01_Sorting_Basic.insertion_sort_advance;
 
 import java.util.Arrays;
 
@@ -19,8 +19,8 @@ public class Main {
     Integer[] arr1 = SortTestHelper.generateRandomArray(N,0,N);
     Integer[] arr2 = Arrays.copyOf(arr1,arr1.length);
 
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.SelectionSort",arr1);
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.InsertionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.SelectionSort",arr1);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.InsertionSort",arr2);
 
     System.out.println();
 
@@ -30,8 +30,8 @@ public class Main {
     arr1 = SortTestHelper.generateRandomArray(N,0,3);
     arr2 = Arrays.copyOf(arr1,arr1.length);
 
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.SelectionSort",arr1);
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.InsertionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.SelectionSort",arr1);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.InsertionSort",arr2);
 
     System.out.println();
 
@@ -42,8 +42,8 @@ public class Main {
     arr1 = SortTestHelper.generateNearlyOrderArray(N,swapTimes);
     arr2 = Arrays.copyOf(arr1,arr1.length);
 
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.SelectionSort",arr1);
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort_advance.InsertionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.SelectionSort",arr1);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort_advance.InsertionSort",arr2);
 
     return;
 

@@ -1,4 +1,4 @@
-package Sorting_Basic.selection_sort_using_comparable;
+package _01_Sorting_Basic.selection_sort_using_comparable;
 
 /**
  * Created by guanxy on 2018/4/25.

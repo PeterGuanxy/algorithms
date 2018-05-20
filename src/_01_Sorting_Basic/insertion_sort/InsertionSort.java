@@ -1,6 +1,6 @@
-package Sorting_Basic.insertion_sort;
+package _01_Sorting_Basic.insertion_sort;
 
-import Sorting_Basic.selection_sort_detect_performance.SortTestHelper;
+import _01_Sorting_Basic.selection_sort_detect_performance.SortTestHelper;
 
 import java.util.Arrays;
 
@@ -33,8 +33,8 @@ public class InsertionSort {
     Integer[] arr = SortTestHelper.generateRandomArray(N,0,10000);
     Integer[] arr2 = Arrays.copyOf(arr,arr.length);
 
-    SortTestHelper.testSort("Sorting_Basic.insertion_sort.InsertionSort",arr);
-    SortTestHelper.testSort("Sorting_Basic.selection_sort_detect_performance.SelectionSort",arr2);
+    SortTestHelper.testSort("_01_Sorting_Basic.insertion_sort.InsertionSort",arr);
+    SortTestHelper.testSort("_01_Sorting_Basic.selection_sort_detect_performance.SelectionSort",arr2);
 
 
   }
