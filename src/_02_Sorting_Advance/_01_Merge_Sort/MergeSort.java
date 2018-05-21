@@ -16,7 +16,7 @@ public class MergeSort {
   //将arr[l...mid]和arr[mid+1...r]两部分进行归并
   private static void merge(Comparable[] arr, int l, int mid, int r) {
 
-    Comparable[] aux = Arrays.copyOfRange(arr, l, r + 1);
+    Comparable[] aux = Arrays.copyOfRange(arr, l, r +1 );
 
     //初始化，i指向左半部分的起始索引位置l；j指向右半部分起始索引位置mid+1
     int i = l, j = mid + 1;
@@ -56,10 +56,10 @@ public class MergeSort {
 
   public static void main(String[] args) {
 
-    int N = 1000000;
-    Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
+    int N = 10;
+    Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100);
     SortTestHelper.testSort("_02_Sorting_Advance._01_Merge_Sort.MergeSort", arr);
-
+    SortTestHelper.printArray(arr);
     return;
   }
 }
