@@ -56,7 +56,7 @@ public class MergeSort {
 
   public static void main(String[] args) {
 
-    int N = 10;
+    int N = 100;
     Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100);
     SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.MergeSort", arr);
     SortTestHelper.printArray(arr);

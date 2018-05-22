@@ -38,17 +38,15 @@ public class MergeSort2 {
     }
   }
 
+  //递归使用归并排序，对arr[l...r]的范围进行排序
   private static void sort(Comparable[] arr, int l, int r) {
 
     //优化2: 对于小规模数组，使用插入排序
-    if (r - l <= 15) {
-      InsertionSort.sort(arr, l, r);
-      return;
-    }
+//    if (r - l <= 15) {
+//      InsertionSort.sort(arr, l, r);
+//      return;
+//    }
 
-    if (l >= r) {
-      return;
-    }
     int mid = (l + r) / 2;
     sort(arr, l, mid);
     sort(arr, mid + 1, r);
@@ -67,7 +65,7 @@ public class MergeSort2 {
 
   public static void main(String[] args) {
 
-    int N = 10;
+    int N = 100;
     Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100);
     SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.MergeSort2", arr);
     SortTestHelper.printArray(arr);
