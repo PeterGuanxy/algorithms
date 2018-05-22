@@ -1,4 +1,4 @@
-package _02_Sorting_Advance._01_Merge_Sort;
+package _02_Sorting_Advance._02_Merge_Sort_Advance;
 
 import java.util.Arrays;
 
@@ -6,23 +6,25 @@ import java.util.Arrays;
  * description
  *
  * @author guanxy
- * @date 2018/5/21
+ * @date 2018/5/23
  */
 public class Main {
   // 比较InsertionSort和MergeSort两种排序算法的性能效率
   // 整体而言, MergeSort的性能最优, 对于近乎有序的数组的特殊情况, 见测试2的详细注释
   public static void main(String[] args) {
 
-    int N = 50000;
+    int N = 5000000;
 
     // 测试1 一般测试
     System.out.println("Test for random array, size = " + N + " , random range [0, " + N + "]");
 
     Integer[] arr1 = SortTestHelper.generateRandomArray(N, 0, N);
     Integer[] arr2 = Arrays.copyOf(arr1, arr1.length);
+    Integer[] arr3 = Arrays.copyOf(arr1, arr1.length);
 
-    SortTestHelper.testSort("_02_Sorting_Advance._01_Merge_Sort.InsertionSort", arr1);
-    SortTestHelper.testSort("_02_Sorting_Advance._01_Merge_Sort.MergeSort", arr2);
+    SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.InsertionSort", arr1);
+    SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.MergeSort", arr2);
+    SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.MergeSort2", arr3);
 
     System.out.println();
 
@@ -38,9 +40,11 @@ public class Main {
 
     arr1 = SortTestHelper.generateNearlyOrderedArray(N, swapTimes);
     arr2 = Arrays.copyOf(arr1, arr1.length);
+    arr3 = Arrays.copyOf(arr1, arr1.length);
 
-    SortTestHelper.testSort("_02_Sorting_Advance._01_Merge_Sort.InsertionSort", arr1);
-    SortTestHelper.testSort("_02_Sorting_Advance._01_Merge_Sort.MergeSort", arr2);
+    SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.InsertionSort", arr1);
+    SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.MergeSort", arr2);
+    SortTestHelper.testSort("_02_Sorting_Advance._02_Merge_Sort_Advance.MergeSort2", arr3);
 
     return;
   }
