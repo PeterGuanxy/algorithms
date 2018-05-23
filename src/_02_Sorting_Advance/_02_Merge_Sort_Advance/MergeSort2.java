@@ -42,10 +42,10 @@ public class MergeSort2 {
   private static void sort(Comparable[] arr, int l, int r) {
 
     //优化2: 对于小规模数组，使用插入排序
-//    if (r - l <= 15) {
-//      InsertionSort.sort(arr, l, r);
-//      return;
-//    }
+    if (r - l <= 15) {
+      InsertionSort.sort(arr, l, r);
+      return;
+    }
 
     int mid = (l + r) / 2;
     sort(arr, l, mid);
